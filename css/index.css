@@ -164,7 +164,9 @@ p {
   padding-top: 20px;
   width: 100%;
   margin: 0 auto;
-  background-color: #F6F6F6;
+  background-color: rgba(246, 246, 246, 0.75);
+  position: fixed;
+  top: 0;
 }
 @keyframes pulse {
   0% {
@@ -231,6 +233,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  margin-top: 115px;
 }
 .home .intro h2 {
   padding: 15px;

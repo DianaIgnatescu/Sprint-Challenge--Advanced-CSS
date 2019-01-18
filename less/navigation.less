@@ -4,7 +4,10 @@
   padding-top: 20px;
   width: 100%;
   margin: 0 auto;
-  background-color:@nav-bg;
+  // background-color:@nav-bg;
+  background-color: fade(@nav-bg, 75%); 
+  position: fixed;
+  top: 0;
 
   @keyframes pulse {
     0% {transform: scale(1);}
