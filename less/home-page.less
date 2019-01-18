@@ -124,4 +124,68 @@
       }
     }
   }
+  .subscribe {
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: @wild-sand;
+    border-radius: 3px;
+    // padding: 30px;
+    font-size: 1.6rem;
+    border: 1px solid @border-real;
+    box-shadow: 0px 1px 10px 2px @border-real;
+    h2 {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 3rem;
+    }
+    form {
+      h3 {
+        font-size: 1.6rem;
+        padding: 20px;
+      }
+      .contact {
+        label {
+          font-size: 1.6rem;
+          padding: 20px;
+
+          @media @phone {
+            display: inline-block;
+          }
+          input {
+            margin-right: 30px;
+            @media @phone {
+              width: 400px;
+              padding-right: 40px;
+            }
+          }
+        }
+
+        button {
+          margin-left: 10px;
+          #styling-mixins.btn-cta(5px; @btn-bg-color; 1.8rem; @porcelain; center);
+          padding: 5px 0;
+          width: 20%;
+          align-self: right;
+          border: 2px solid @porcelain;
+          &:hover {
+            #styling-mixins.btn-hover();
+            border: 2px solid @btn-bg-color;
+          }
+    
+          @media @phone {
+            width: 100%;
+            padding: 20px 0;
+            margin: 10px 0;
+          }
+        }
+      }
+
+      
+    
+    }
+    
+    
+
+  }
 }// home
