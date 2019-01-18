@@ -20,4 +20,22 @@
   .border-radius(@radius: 5px) {
   border-radius: @radius;
   }
+
+  .btn-cta(@radius; @background; @font-size; @color; @align) {
+    border-radius: @radius;
+    background-color: @background;
+    font-size: @font-size;
+    color: @color;
+    text-align: @align;
+  }
+
+  .btn-hover() {
+    background-color: @porcelain;
+    color: @btn-bg-color;
+    border: 2px solid @btn-bg-color;
+  }
+  // .btn-style(@padding; @margin) {
+  //   padding: @padding;
+  //   margin:@margin;
+  // }
 }

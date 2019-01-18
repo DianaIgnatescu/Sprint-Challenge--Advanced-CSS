@@ -61,6 +61,13 @@
       }
 
       .btn {
+        #styling-mixins.btn-cta(5px; @btn-bg-color; 1.8rem; @porcelain; center);
+        padding: 10px 0;
+        width: 27%;
+        align-self: right;
+        &:hover {
+          #styling-mixins.btn-hover();
+        }
       }
     }
 
