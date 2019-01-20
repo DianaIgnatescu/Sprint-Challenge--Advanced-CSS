@@ -1,1 +1,36 @@
 // Mixins Here
+
+#flex-mixins {
+  .flex-row(@just-cont: space-around; @al-it: center) {
+  display: flex;
+  justify-content: @just-cont;
+  align-items: @al-it;
+  }
+
+  .flex-column(@direction; @just-cont; @al-it) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @just-cont;
+    align-items: @al-it;
+  }
+}
+
+#styling-mixins {
+  .border-radius(@radius: 5px) {
+  border-radius: @radius;
+  }
+
+  .btn-cta(@radius; @background; @font-size; @color; @align) {
+    border-radius: @radius;
+    background-color: @background;
+    font-size: @font-size;
+    color: @color;
+    text-align: @align;
+  }
+
+  .btn-hover() {
+    background-color: @porcelain;
+    color: @btn-bg-color;
+    border: 2px solid @btn-bg-color;
+  }
+}

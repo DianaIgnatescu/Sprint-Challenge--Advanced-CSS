@@ -34,13 +34,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+   Adaptive websites require creating different layouts for different screen sizes while fully responsive websites utilize one master template that can adapt to all screens regardless of the size of the devices. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+   Mobile first implies that the layout of a page is designed for a mobile device first and then its features are expanded upon in order to accommodate larger screen sizes such as tablets or desktops by utilizing min-width media queries. Similarly, desktop first means that web layouts are created for desktop devices first and accommodating small-screen users while maintaining functionality for smaller resolutions with the use of max-width media queries.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+   Since rem units are relative to the root element, by defining the font-size on the root element to 62.5%, we set all rem units to be a percentage of that. Setting the font-size to 62.5% allows us to use rem is a similar way to px (i.e. 1.6rem is equivalent to16px).
+
+
 4. How would you describe preprocessing to someone new to CSS?
 
+   Preprocessing provides powerful and unique syntax which is compiled into normal CSS. Preprocessing helps programmers write and maintain reusable code and is considered to be a great tool for increasing productivity and reducing the amount of code written in projects. Preprocessors contain features which are not available in normal CSS such as variables, and mixins for example, but are powerful tools which make reading, and organizing code a lot easier than with normal CSS.
+
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+   My favorite concept of preprocessing is by far the ability to use imports and split my code into different files. I believe it is making a huge difference in how much easier I find it to keep organized when working on a project. The concept that gives me the most trouble at the moment is the use of mixins. I believe they are interesting and would love to learn how to use them better but it feels more difficult to think of a mixin I could reuse throughout my code than just typing values directly. I understand it's uses and that it cuts down on the amount of code written but it's definitely something I'm trying to use more.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

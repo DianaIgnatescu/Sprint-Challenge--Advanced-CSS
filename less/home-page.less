@@ -3,7 +3,7 @@
 .home {
 
   .intro {
-
+    margin-top: 115px;
     h2 {
       padding: 15px;
     }
@@ -11,7 +11,12 @@
     p {
       padding:0 15px;
     }
-  
+    img {
+      #styling-mixins.border-radius(@radius: 5px);
+      @media @phone {
+        max-width: 100%;
+      }
+    }
   }
 
   .space-images {
@@ -24,6 +29,22 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+    .blast {
+      @media @phone {
+          width: 100%;
+      }
+    }
+    
+    .sky {
+      @media @phone {
+        display: none;
+      }
+    }
+    .launch {
+      @media @phone {
+        display: none;
+      }
     }
   }
 
@@ -46,8 +67,19 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      #flex-mixins.flex-column(column, space-between, flex-start);
+      padding: 15px;
+      margin-top: 20px;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+        order: 1;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +90,32 @@
       }
 
       .btn {
+        #styling-mixins.btn-cta(5px; @btn-bg-color; 1.8rem; @porcelain; center);
+        padding: 10px 0;
+        width: 27%;
+        align-self: right;
+        border: 2px solid @porcelain;
+        &:hover {
+          #styling-mixins.btn-hover();
+          border: 2px solid @btn-bg-color;
+        }
+
+        @media @phone {
+          width: 100%;
+          padding: 20px 0;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px 0;
+      }
       
       img {
         width: 100%;
@@ -71,5 +123,69 @@
         border-radius: 10px;
       }
     }
+  }
+  .subscribe {
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: @wild-sand;
+    border-radius: 3px;
+    // padding: 30px;
+    font-size: 1.6rem;
+    border: 1px solid @border-real;
+    box-shadow: 0px 1px 10px 2px @border-real;
+    h2 {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 3rem;
+    }
+    form {
+      h3 {
+        font-size: 1.6rem;
+        padding: 20px;
+      }
+      .contact {
+        label {
+          font-size: 1.6rem;
+          padding: 20px;
+
+          @media @phone {
+            display: inline-block;
+          }
+          input {
+            margin-right: 30px;
+            @media @phone {
+              width: 400px;
+              padding-right: 40px;
+            }
+          }
+        }
+
+        button {
+          margin-left: 10px;
+          #styling-mixins.btn-cta(5px; @btn-bg-color; 1.8rem; @porcelain; center);
+          padding: 5px 0;
+          width: 20%;
+          align-self: right;
+          border: 2px solid @porcelain;
+          &:hover {
+            #styling-mixins.btn-hover();
+            border: 2px solid @btn-bg-color;
+          }
+    
+          @media @phone {
+            width: 100%;
+            padding: 20px 0;
+            margin: 10px 0;
+          }
+        }
+      }
+
+      
+    
+    }
+    
+    
+
   }
 }// home

@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>SpaceWalkers</title>
 
@@ -17,11 +18,24 @@
 <body>
 
  <!-- navigation code here -->
+  <div class="navigation">
+    <div class="navbar">
+      <h1 class="pulse">Space Walkers</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="#">Sign In</a>
+      </nav>
+    </div>
+  </div>
 
   <div class="container home">
 
     <header class="intro">
        <!-- image code here -->
+       <img src="img/main-header.png" alt="main-header">
 
       <h2>Lift Off</h2>
     
@@ -60,6 +74,22 @@
           <img src="img/space-walk.png" alt="Space walking astronaut">
       </div>
 
+    </section>
+
+    <section class="subscribe">
+      <h2>Newsletter Subscription!</h2>
+      <form>
+          <h3>Your Details</h3>
+        <div class="contact">
+          <label for="name">Name</label>
+          <input type="text" id="name">
+          
+          <label for="email">Email Address</label>
+          <input type="email" id="email">
+          
+          <button type="submit">Sign Up</button>
+        </div>
+    </form>
     </section>
 
     <footer>
